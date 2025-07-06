@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.0/lottie.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+
+
+
+
+
+
+
+
+
+  <title> Vivek Raj | Portfolio</title>
+
+  <link rel="icon" type="image/x-icon" href="src/png/main-favicon.png" />
+  <!-- aos cdn -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- google fonts-->
+  <link rel="stylesheet"
+
+    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+
+
+
+
+<body class="body no-scroll">
+
+  <audio autoplay loop id="audioPlayer" style="display: none">
+  <source src="src/mp3/Interstellar_Theme__trim.mp3" type="audio/mp3" />
+</audio>
+
+
+
+  <div id="preloader"></div>
+  <noscript>Allow Javascript</noscript>
+
+  <header>
+    <div class="cursor-inner" id="cursor-inner"></div>
+    <div class="cursor-outer" id="cursor-outer"></div>
+
+    <div class="navbar" id="navbar">
+
+      <div class="hey">Hey! Hey !!</div>
+
+      <div class="logo" tabindex="0" aria-label="vinod jangid logo">
+        <div class="logo-top">
+          <img src="src/png/nav-avatar.png" alt="animation-head" id="nav-avatar"/>
+
+        </div>
+      </div>
+
+
+      <div class="navbar-tabs" id="navbar-tabs">
+  <ul class="navbar-tabs-ul">
+    <li class="navbar-tabs-li home activeThistab" data-aos="fade-down" data-aos-delay="100">
+      <a href="#home" tabindex="0" aria-label="Home menu button">
+        &#60;/Home&#62;
+      </a>
+    </li>
+
+    <li class="navbar-tabs-li about" data-aos="fade-down" data-aos-delay="200">
+      <a href="#about" aria-label="About menu button">
+        &#60;/AboutMe&#62;
+      </a>
+    </li>
+
+    <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+            <a href="#skills" aria-label="skills menu button">
+              &#60;/Skills&#62;
+            </a>
+          </li>
+
+    <li class="navbar-tabs-li education" data-aos="fade-down" data-aos-delay="300">
+      <a href="#education" aria-label="Education and Experience menu button">
+        &#60;/Education &amp; Experience&#62;
+      </a>
+    </li>
+
+    <li class="navbar-tabs-li projects" data-aos="fade-down" data-aos-delay="400">
+      <a href="#projects" aria-label="Projects menu button">
+        &#60;/Projects&#62;
+      </a>
+    </li>
+
+    <li class="navbar-tabs-li honors" data-aos="fade-down" data-aos-delay="500">
+      <a href="#honors" aria-label="Honors and Awards menu button">
+        &#60;/Honors &amp; Awards&#62;
+      </a>
+    </li>
+
+
+  </ul>
+</div>
+
+
+
+
+      <!-- navbar tabs ends -->
+    </div>
+  </header>
+  <!-- header ends here -->
+
+  <main>
+    <!-- hamburger -->
+    <div class="hamburger" id="hamburger" data-aos="fade">
+      <div class="hamburgerbase">
+        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+          <span class="burger-bar" id="burger-bar1"></span>
+          <span class="burger-bar" id="burger-bar2"></span>
+          <span class="burger-bar" id="burger-bar3"></span>
+        </button>
+      </div>
+    </div>
+    <!-- hamburger -->
+
+   <div class="mobiletogglemenu" id="mobiletogglemenu">
+  <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+    <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
+      <a href="#home" tabindex="0" aria-label="Home menu button">
+        &#60;/Home&#62;
+      </a>
+    </li>
+
+    <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+      <a href="#about" tabindex="0" aria-label="About menu button">
+        &#60;/AboutMe&#62;
+      </a>
+    </li>
+
+    <li id="education-mobile-tab" class="mobile-navbar-tabs-li education" onclick="hidemenubyli()">
+      <a href="#education" tabindex="0" aria-label="Education and Experience menu button">
+        &#60;/Education &amp; Experience&#62;
+      </a>
+    </li>
+
+    <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+      <a href="#projects" tabindex="0" aria-label="Projects menu button">
+        &#60;/Projects&#62;
+      </a>
+    </li>
+
+    <li id="honors-mobile-tab" class="mobile-navbar-tabs-li honors" onclick="hidemenubyli()">
+      <a href="#honors" tabindex="0" aria-label="Honors and Awards menu button">
+        &#60;/Honors &amp; Awards&#62;
+      </a>
+    </li>
+
+    <li id="resume-mobile-tab" class="mobile-navbar-tabs-li resume" onclick="hidemenubyli()">
+      <a href="#resume" tabindex="0" aria-label="Resume menu button">
+        &#60;/Resume&#62;
+      </a>
+    </li>
+  </ul>
+</div>
+
+    <!-- mobile toggle menu ends -->
+
+    
+
+    <section class="landing-page-container" id="home">
+
+      
+      <video autoplay muted loop playsinline id="bg-video">
+    <source src="src/videos/RR2.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  
+
+    
+
+    <div class="video-overlay"></div>
+    
+
+     <div class="video-dialogue" id="video-dialogue">
+
+    “Scroll the cursor... I am always watching. 😵‍💫”
+  </div>
+
+  
+
+      <div class="blob"></div>
+
+      <div class="text-content">
+
+        <article id="hello-friend" data-aos="fade-up" data-aos-delay="200">
+          
+         <p class="jello">H</p>
+<p class="jello">e</p>
+<p class="jello">l</p>
+<p class="jello">l</p>
+<p class="jello">o</p>
+<p class="jello">!</p>
+<p class="jello">👋</p>
+ &nbsp;
+<p class="jello">&</p>
+ &nbsp;
+<p class="jello">N</p>
+<p class="jello">a</p>
+<p class="jello">m</p>
+<p class="jello">a</p>
+<p class="jello">s</p>
+<p class="jello">t</p>
+<p class="jello">e</p>
+ &nbsp;
+<p class="jello">🙏</p>
+          &nbsp;
+          <p class="jello">I</p>
+          <p class="jello">'</p>
+          <p class="jello">m</p>
+        </article>
+
+        <article id="name" data-aos="fade-up" data-aos-delay="200">
+
+          <p class="jello">V</p>
+          <p class="jello">i</p>
+          <p class="jello">v</p>
+          <p class="jello">e</p>
+          <p class="jello">k</p>
+          &nbsp;
+          <p class="jello">R</p>
+          <p class="jello">a</p>
+          <p class="jello">j</p>
+          
+          <p class="jello">.</p>
+        </article>
+
+        <article id="work" data-aos="fade-up" data-aos-delay="400">
+          <div>
+            <p class="jello">I</p>
+          </div>
+
+
+            <div>
+        
+        <p class="jello"> </p>
+        <p class="jello">c</p>
+        <p class="jello">o</p>
+        <p class="jello">d</p>
+        <p class="jello">e</p>
+        <p class="jello">.</p>
+      </div>
+      <div>
+        <p class="jello">I</p>
+        <p class="jello"> &nbsp; </p>
+        <p class="jello">s</p>
+        <p class="jello">e</p>
+        <p class="jello">c</p>
+        <p class="jello">u</p>
+        <p class="jello">r</p>
+        <p class="jello">e</p>
+        <p class="jello">.</p>
+      </div>
+      <div>
+        <p class="jello">I</p>
+        <p class="jello"> &nbsp;</p>
+        <p class="jello">b</p>
+        <p class="jello">u</p>
+        <p class="jello">i</p>
+        <p class="jello">l</p>
+        <p class="jello">d</p>
+        <p class="jello"> &nbsp;</p>
+        <p class="jello">w</p>
+        <p class="jello">i</p>
+        <p class="jello">t</p>
+        <p class="jello">h</p>
+        <p class="jello"> &nbsp; </p>
+        <p class="jello">A</p>
+        <p class="jello">I</p>
+        <p class="jello">.</p>
+      </div>
+
+  
+
+        </article>
+
+            <p id="info-para" data-aos="fade-up" data-aos-delay="300">
+      I’m a Computer Science graduate passionate about building secure and intelligent software. My work spans software development, DevOps, and AI systems with a strong focus on performance, security, and reliability.<br /><br />
+      <span style="display:block; height: 10px;"></span>
+      I care about writing clean code, automating processes, and creating systems that scale with confidence.
+    </p>
+
+  
+
+        <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
+          <a href="mailto:infovinodjangid@gmail.com" tabindex="-1">
+            <button class="letsTalkBtn">
+              <p class="letsTalkBtn-text">Let's Talk!</p>
+              <span class="letsTalkBtn-BG"></span>
+            </button></a>
+
+
+          <div class="setting-container" id="setting-container">
+            <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
+
+            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0"
+              aria-label="settings for sound and appearance"></label>
+
+            <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
+              <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
+              <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
+                aria-label="switch appearance"></label>
+            </div>
+
+            
+
+            <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
+              <input type="checkbox" id="switchforsound" onclick="playpause() " />
+              
+              <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound"
+                class="needtobeinvert"></label>
+            </div>
+
+          </div>
+          <!-- setting div ends -->
+        </div>
+        <!-- contact-btn-div -->
+      </div>
+     
+
+
+
+ <!-- <div class="footer-avatar-container">
+  <div class="speech-bubble" id="speech-bubble">
+    <span id="bubble-text"></span><span class="cursor">|</span>
+  </div>
+
+  <img src="src/png/footer-avatar-vinod.png" alt="animation-head" class="footer-avatar-img" id="footer-wala-avatar" />
+  
+
+  <div class="footer-avatar-face">
+    <div class="footer-avatar-eye footer-left-eye">
+      <div class="footer-pupil"></div>
+    </div>
+    <div class="footer-avatar-eye footer-right-eye">
+      <div class="footer-pupil"></div>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+
+
+
+ <!-- the below script is for the above avatar thought and talk  ------------------------------->
+
+<script>
+  const thoughts = [
+    "Scroll all you want... I’m always watching 😵‍💫",
+    "Who needs sleep when there's C++ and caffeine? ☕👨‍💻",
+    "404: Brain not found. Please reboot me. 🤖",
+    "Thanks for stopping by! Stay as long as you like 🛋️",
+    "I see you scrolling... 👀",
+    "Need a dev? Let’s talk 💬",
+    "Is it just me, or is this site kind of cool? 😎",
+    "Fun fact: You're my favorite visitor today! ⭐"
+  ];
+
+  const bubble = document.getElementById("speech-bubble");
+  const text = document.getElementById("bubble-text");
+
+  let charIndex = 0;
+  let typing = false;
+
+  function playTypeSound() {
+    const audio = new Audio("https://www.soundjay.com/button/beep-07.wav");
+    audio.volume = 0.1;
+    audio.play();
+  }
+
+  function typeMessage(message, callback) {
+    typing = true;
+    text.innerHTML = '';
+    charIndex = 0;
+
+    const typer = setInterval(() => {
+      if (charIndex < message.length) {
+        const char = message.charAt(charIndex);
+        text.innerHTML += char === " " ? "&nbsp;" : char;
+        if (Math.random() < 0.15) playTypeSound();
+        charIndex++;
+      } else {
+        clearInterval(typer);
+        typing = false;
+        if (callback) setTimeout(callback, 250);
+      }
+    }, 40 + Math.random() * 30);
+  }
+
+  function startRandomLoop() {
+    const randomIndex = Math.floor(Math.random() * thoughts.length);
+    const message = thoughts[randomIndex];
+    typeMessage(message, () => {
+      setTimeout(startRandomLoop, 4000); // wait before next message
+    });
+  }
+
+  bubble.style.opacity = 1;
+  startRandomLoop();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+    <!-- landing page ends here -->
+
+      <!-- --------------------------------------About page start here ------------------------------------------------------- here -->
+    <section class="about-section-container" id="about" data-aos="fade-up">
+      <div class="about-section">
+        <div class="section-heading">
+          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
+            &#60;/AboutMe&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+
+        <div class="info-dp-section">
+
+  <div class="about-info">
+  <p tabindex="0">
+    Hi! I'm Vivek Raj,  a Computer Science graduate with a focus on Artificial Intelligence from Binghamton University. I’m passionate about building secure, intelligent systems that solve real-world problems.
+  </p>
+  <br />
+  <p tabindex="0">
+    My journey began during my undergraduate studies at Binghamton, where I developed a strong foundation in algorithms, systems, and AI. That foundation grew into a deeper interest in cybersecurity, machine learning, and system design during my master’s.
+  </p>
+  <br />
+  <p tabindex="0">
+    I’ve contributed to Apple’s open-source FoundationDB, competed in global security competitions like MITRE’s eCTF, and conducted research in prompt engineering for NLP. I also mentored over 100 students as a Teaching Assistant in Computer Security and Algorithm Design.
+  </p>
+  <br />
+  <p tabindex="0">
+    These days, I love crafting creative AI solutions, optimizing system performance, and working on projects that sit at the intersection of code, security, and innovation.
+  </p>
+
+
+             <!-- Resume button -->
+      <button class="resume-btn" id="resume-btn" onclick="openURL()">
+        <div class="sign">
+          <svg viewBox="0 0 640 552">
+            <path
+              d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
+          </svg>
+        </div>
+
+
+        <div class="text">Resume</div>
+      </button>
+          </div>
+
+          <div class="dp neon-glow" data-aos="fade-up">
+            <img src="src/webp/PIC_VIVEK_RAJ.webp" alt="Vivek Raj" tabindex="0" aria-label="image of vivek" />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- about section ends  -->
+
+    <!------------------------------------------------------- skills-section-container ------------------------------------- -->
+    
+
+    <section class="skills-section-container" id="skills">
+      
+      <div class="skills-section">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
+            &#60;/Skills&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="frontend-dev-section">
+          <h3 class="frontend-dev-heading" data-aos="fade-up" tabindex="0"
+            aria-label="As a frontend a developer these are the skills i have">
+            Tech Stack
+          </h3>
+
+      <ul class="tech-stack-wrapper">
+
+  <!-- Existing Stack -->
+ 
+   <li class="tech-stack-box" data-aos="fade-up">
+    <img src="./src/svg/tensorflow.svg" alt="TensorFlow skill" class="tech-stack-logo" />
+    <span class="tooltip">TENSORFLOW</span>
+  </li>
+
+  <li class="tech-stack-box" data-aos="fade-up">
+    <img src="./src/svg/pytorch.svg" alt="PyTorch skill" class="tech-stack-logo" />
+    <span class="tooltip">PYTORCH</span>
+  </li>
+ 
+  <li class="tech-stack-box" data-aos="fade-up">
+    <img src="./src/png/tailwind.png" alt="tailwind skill" class="tech-stack-logo" />
+    <span class="tooltip">TAILWIND</span>
+  </li>
+
+  <li class="tech-stack-box" data-aos="fade-up">
+    <img src="./src/png/reactlogo.png" alt="react skill" class="tech-stack-logo" />
+    <span class="tooltip">REACTJS</span>
+  </li>
+
+  <li class="tech-stack-box" data-aos="fade-up">
+    <img src="./src/png/node.png" alt="nodejs skill" class="tech-stack-logo" />
+    <span class="tooltip">NODEJS</span>
+  </li>
+
+  <li class="tech-stack-box" data-aos="fade-up">
+    <img src="./src/png/githublogo.png" alt="github skill" class="tech-stack-logo needtobeinvert" />
+    <span class="tooltip">GITHUB</span>
+  </li>
+
+  <li class="tech-stack-box" data-aos="fade-up">
+    <img src="./src/png/gitlogo.png" alt="git skill" class="tech-stack-logo" />
+    <span class="tooltip">GIT</span>
+  </li>
+
+  <li class="tech-stack-box" data-aos="fade-up">
+    <img src="./src/png/clogo.png" alt="c skill" class="tech-stack-logo" />
+    <span class="tooltip">C</span>
+  </li>
+
+  <li class="tech-stack-box" data-aos="fade-up">
+    <img src="./src/png/cpplogo.png" alt="c++ skill" class="tech-stack-logo" />
+    <span class="tooltip">C++</span>
+  </li>
+
+  <li class="tech-stack-box" data-aos="fade-up">
+    <img src="./src/png/ailogo.png" alt="Adobe AI" class="tech-stack-logo" />
+    <span class="tooltip">ADOBE AI</span>
+  </li>
+
+  <!-- New Tech Stack From Image + Your Request -->
+
+  <li class="tech-stack-box" data-aos="fade-up">
+    <img src="./src/svg/java.svg" alt="Java skill" class="tech-stack-logo" />
+    <span class="tooltip">JAVA</span>
+  </li>
+
+  <li class="tech-stack-box" data-aos="fade-up">
+    <img src="./src/svg/python.svg" alt="Python skill" class="tech-stack-logo" />
+    <span class="tooltip">PYTHON</span>
+  </li>
+
+  <li class="tech-stack-box" data-aos="fade-up">
+    <img src="./src/svg/tensorflow.svg" alt="TensorFlow skill" class="tech-stack-logo" />
+    <span class="tooltip">TENSORFLOW</span>
+  </li>
+
+  <li class="tech-stack-box" data-aos="fade-up">
+    <img src="./src/svg/pytorch.svg" alt="PyTorch skill" class="tech-stack-logo" />
+    <span class="tooltip">PYTORCH</span>
+  </li>
+
+  <li class="tech-stack-box" data-aos="fade-up">
+    <img src="./src/svg/sckit.svg" alt="Scikit-learn skill" class="tech-stack-logo" />
+    <span class="tooltip">SCIKIT-LEARN</span>
+  </li>
+
+  <li class="tech-stack-box" data-aos="fade-up">
+    <img src="./src/svg/Linux.svg" alt="Linux skill" class="tech-stack-logo" />
+    <span class="tooltip">LINUX</span>
+  </li>
+
+   <li class="tech-stack-box" data-aos="fade-up">
+    <img src="./src/png/htmllogo.png" alt="Html skill" class="tech-stack-logo" />
+    <span class="tooltip">HTML</span>
+  </li>
+
+  <li class="tech-stack-box" data-aos="fade-up">
+    <img src="./src/png/csslogo.png" alt="css skill" class="tech-stack-logo" />
+    <span class="tooltip">CSS</span>
+  </li>
+
+
+  <li class="tech-stack-box" data-aos="fade-up">
+    <img src="./src/svg/mongo.svg" alt="MongoDB skill" class="tech-stack-logo" />
+    <span class="tooltip">MONGODB</span>
+  </li>
+
+  <li class="tech-stack-box" data-aos="fade-up">
+    <img src="./src/svg/flask.svg" alt="Flask skill" class="tech-stack-logo" />
+    <span class="tooltip">FLASK</span>
+  </li>
+
+  <!-- User-requested additions -->
+
+  <li class="tech-stack-box" data-aos="fade-up">
+    <img src="./src/svg/c_sharp.svg" alt="C# skill" class="tech-stack-logo" />
+    <span class="tooltip">C#</span>
+  </li>
+
+  <li class="tech-stack-box" data-aos="fade-up">
+    <img src="./src/svg/net.svg" alt=".NET skill" class="tech-stack-logo" />
+    <span class="tooltip">.NET</span>
+  </li>
+
+  <li class="tech-stack-box" data-aos="fade-up">
+    <img src="./src/svg/embedded.svg" alt="Embedded Systems skill" class="tech-stack-logo" />
+    <span class="tooltip">EMBEDDED</span>
+  </li>
+
+</ul>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!----------------------------------------------------------------------- skills section ends ---------------------------------------------------------->
+
+
+
+    <!----------------------------------------------------------------------- Professional &  education section start here  ---------------------------------------------------------->
+
+
+  <!-- Education Section -->
+<section class="projects-section-container section-bg-style" id="education">
+  <div id="education-bg"></div>
+  
+ <div class="projects-section-div">
+    <!-- Heading -->
+    <div class="section-heading" data-aos="fade-up">
+      <h2 class="section-heading-article" tabindex="0" aria-label="Education and Experience section">
+        &#60;/Education & Experience&#62;
+      </h2>
+      <p class="sectionHeadingP"></p>
+    </div>
+
+    <div class="project-boxes-div">
+      <!-- Master's Degree -->
+      <div data-aos="fade-up" class="project-box-wrapper">
+        <div class="project-box project-box2">
+          <div class="info-div">
+            <img src="src/png/Bing_1.png" alt="Master's degree icon" class="faviconforProject" />
+            <article class="ProjectHeading">Master of Science in Computer Science</article>
+            <p class="ProjectDescription">
+              Binghamton University, NY | Jan 2024 – May 2025<br />
+              Specialized in Artificial Intelligence, GPA: 4.0<br />
+              Graduated with Summa Cum Laude honors 🏆
+            </p>
+          </div>
+          <div class="image-div vivek-image-div">
+            <img src="src/png/Vivek_1.webp" alt="Masters visual" class="vivek-image" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Bachelor's Degree -->
+      <div data-aos="fade-up" class="project-box-wrapper">
+        <div class="project-box project-box2">
+          <div class="info-div">
+            <img src="src/png/Bing_1.png" alt="Bachelor's degree icon" class="faviconforProject" />
+            <article class="ProjectHeading">Bachelor of Science in Computer Science</article>
+            <p class="ProjectDescription">
+              Binghamton University, NY | Aug 2021 – Dec 2023<br />
+              GPA: 3.8 • Dean’s List<br />
+              Graduated with Magna Cum Laude honors 🏆
+            </p>
+          </div>
+          <div class="image-div vivek-image-div">
+            <img src="src/png/Bing_2.jpg" alt="Bachelors visual" class="vivek-image" />
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-heading-article" tabindex="0" aria-label="Education and Experience section">
+        &#60;/Experience&#62;
+      </h2>
+      <!-- Teaching Assistant -->
+      <div data-aos="fade-up" class="project-box-wrapper">
+        <div class="project-box project-box2">
+          <div class="info-div">
+            <img src="src/png/Bing_2.jpg" alt="Teaching icon" class="faviconforProject" />
+            <article class="ProjectHeading">Teaching Assistant</article>
+            <p class="ProjectDescription">
+              Binghamton University, NY | Aug 2024 – July 2025<br />
+              Guided students in Computer Security and provided feedback on assignments.
+            </p>
+          </div>
+          <div class="image-div vivek-image-div">
+            <img src="src/png/bing_3.png" alt="Teaching role visual" class="vivek-image" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Research Assistant -->
+      <div data-aos="fade-up" class="project-box-wrapper">
+        <div class="project-box project-box2">
+          <div class="info-div">
+            <img src="src/png/bing_2.jpg" alt="Research icon" class="faviconforProject" />
+            <article class="ProjectHeading">Research Assistant</article>
+            <p class="ProjectDescription">
+              Binghamton University, NY | Feb 2024 – May 2024<br />
+              Worked on prompt engineering to optimize AI responses and tested models for enhanced accuracy.
+            </p>
+          </div>
+          <div class="image-div vivek-image-div">
+            <img src="src/png/NLP_2.jpg" alt="Research assistant visual" class="vivek-image" />
+          </div>
+        </div>
+      </div>
+
+      <!-- JPM Virtual Experience -->
+      <div data-aos="fade-up" class="project-box-wrapper">
+        <div class="project-box project-box2">
+          <div class="info-div">
+            <img src="src/png/jpm_1.png" alt="JPM logo" class="faviconforProject" />
+            <article class="ProjectHeading">Software Engineering Virtual Experience</article>
+            <p class="ProjectDescription">
+              JPMorgan Chase & Co. | July 2023<br />
+              Hands-on experience with software workflows and practical dev tasks.
+            </p>
+          </div>
+          <div class="image-div vivek-image-div">
+            <img src="src/png/jpm_2.webp" alt="JPMorgan visual" class="vivek-image" />
+          </div>
+        </div>
+      </div>
+
+      <!-- JPM Cybersecurity -->
+      <div data-aos="fade-up" class="project-box-wrapper">
+        <div class="project-box project-box2">
+          <div class="info-div">
+            <img src="src/png/jpm_1.png" alt="Cybersecurity icon" class="faviconforProject" />
+            <article class="ProjectHeading">Cybersecurity Virtual Experience Program</article>
+            <p class="ProjectDescription">
+              JPMorgan Chase & Co. | June 2023<br />
+              Gained cybersecurity exposure and applied skills in simulated projects.
+            </p>
+          </div>
+          <div class="image-div vivek-image-div">
+            <img src="src/png/JPm_3.png" alt="Cybersecurity visual" class="vivek-image" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Software Intern -->
+      <div data-aos="fade-up" class="project-box-wrapper">
+        <div class="project-box project-box2">
+          <div class="info-div">
+            <img src="src/png/intern_1.png" alt="Internship icon" class="faviconforProject" />
+            <article class="ProjectHeading">Software Intern</article>
+            <p class="ProjectDescription">
+              Central Hudson Gas & Electric, NY | Jun 2022 – Aug 2022<br />
+              Enhanced SAP integration and performance with ABAP and CDS Views.
+            </p>
+          </div>
+          <div class="image-div vivek-image-div">
+            <img src="src/png/central_hud.jpeg" alt="Central Hudson internship" class="vivek-image" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+    <!-------------------------------------------------------------   education section ends here -------------------------------------------------------------------------------------->
+    
+
+    <!-------------------------------------------------------------   project section  section start here -------------------------------------------------------------------------------------->
+
+  
+    <section class="projects-section-container " id="projects">
+      
+      
+      
+      <div class="projects-section-div">
+        
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
+            &#60;/Projects&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="project-boxes-div">
+
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <img src="src/png/apple_2.png" alt="atomic asher website favicon" class="faviconforProject" />
+
+                <article class="ProjectHeading">Apple FoundationDB Contribution(Open Source)</article>
+                <p class="ProjectDescription">
+                      Refactored <code>initialize_logger_level</code> and <code>unit_tests_version_510</code> in FoundationDB,
+              enhancing maintainability, readability, and logging efficiency. This improves debugging reliability and
+              makes the codebase easier to extend.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/apple/foundationdb/pull/11879" target="_blank" class="cta"
+                    aria-label="View GitHub PR Contribution">
+                    <span>GitHub PR #11879</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div    vivek-image-div ">
+                <img src="src/png/Apple_1.jpg" alt="apple website preview image"  />
+              </div>
+            </div>
+          </div>
+
+
+          <!-- ---------------------- -->
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                
+                <img src="src/png/mitre_3.png" alt="src/png/MITRE_2.png" class="faviconforProject" />
+
+                <article class="ProjectHeading">MITRE eCTF 2025 – Embedded Security Competition</article>
+                <p class="ProjectDescription">
+                 Participated in MITRE’s eCTF competition, leading a 7-member team to a top-26 global finish. Built a secure TV decoder with AES-128 encryption, side-channel protections, and anti-replay defenses. Captured 46+ flags by reverse-engineering adversarial firmware using C and Python.
+                </p>
+                <div class="project-buttons">
+
+                   <a href=" https://ectf.ctfd.io/scoreboard" target="_blank" class="github-redirect"
+                    aria-label="Visit MITRE eCTF project on GitHub">
+                    <img src="src/svg/github.svg" alt="GitHub redirect button" />
+                  </a>
+
+
+                  <a href="https://github.com/rrestivo/2025-ectf-bing" target="_blank" class="cta"
+
+                    aria-label="Visit MITRE Live">
+                    <span> MITRE Code </span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div  vivek-image-div">
+                <img src="src/png/MITRE_2.png" alt="MITRE website preview image" />
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <!-- ---------------------- -->
+
+
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+
+                <img src="src/png/hack_2.png" alt="notesync website favicon" class="faviconforProject" />
+
+                <article class="ProjectHeading">AirMouse</article>
+                <p class="ProjectDescription">
+                 Built AirMouse, a computer vision-based tool using TensorFlow to control a computer with hand gestures. Used a client-server model to process video and generate hand skeletons. Implemented smoothing for stable cursor control. Won Best Technical Work at Hackathon 2024
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/rajv79/AirMouse" target="_blank" class="github-redirect"
+
+                    aria-label="Visit AIRmouse on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://devpost.com/software/air-mouse" target="_blank" class="cta"
+                    aria-label="Visit AirMouse Live">
+                    <span>AirMouse view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div vivek-image-div">
+                <img src="src/png/Hack_1.png" alt="NoteSync website preview image" />
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <!-- ---------------------- -->
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <img src="src/png/hack_2.png" alt="withyourdog website favicon" class="faviconforProject" />
+                <article class="ProjectHeading">Custom Memory Management</article>
+                <p class="ProjectDescription">
+                 Built a custom memory manager in C for kernel-space modules, improving performance by 15% with optimized allocation, deallocation, and fragmentation handling. Used bitmap-based tracking and interposition to reduce memory leaks. Developed a test suite with logging and validation, increasing reliability and throughput by 20%
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/rajv79/Custom_memory_mangement" target="_blank" class="cta"
+                    aria-label="Visit my Custom Memory">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div vivek-image-div">
+                <img src="src/png/CUS_M_1.png" alt="withyourdog website preview image" />
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------- -->
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <img src="src/webp/pexelicon-favicon.webp" alt="Analyzing website favicon" class="faviconforProject" />
+                <article class="ProjectHeading">Analyzing Trends and Toxicity in Online Tech</article>
+                <p class="ProjectDescription">
+                  Analyzed Reddit, 4chan, and YouTube discussions on tech and movies using the ModerateHateSpeech API to detect toxicity and hate speech. Built an interactive dashboard with Hugging Face LLM and MongoDB to visualize trends and engagement. Provided insights into how social platforms shape public discourse
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/rajv79/Analyzing-Trends-and-Toxicity-in-Online-Tech-and-Movie-Discussions" target="_blank" class="github-redirect"
+                    aria-label="Visit on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://github.com/rajv79/Analyzing-Trends-and-Toxicity-in-Online-Tech-and-Movie-Discussions" target="_blank" class="cta"
+                    aria-label="Visit Live">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div  vivek-image-div">
+                <img src="src/png/AT_1.png" alt=" website preview image" />
+              </div>
+            </div>
+          </div>
+
+
+          <!-- --------------------- -->
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <img src="src/png/T2_2.jpg" alt="Stock Market Prediction website favicon" class="faviconforProject" />
+                <article class="ProjectHeading">Stock Market Prediction</article>
+                <p class="ProjectDescription">
+                 Built a Python-based stock trading and forecasting tool using libraries like scikit-learn, pandas, NumPy, and PyTorch. Engineered 100+ financial features and indicators for accurate predictions. Integrated SVC, Logistic Regression, K-means, and model ensembling (Voting, Blending, Adaboost) to boost reliability. Delivered a user-friendly interface to help users make smarter trading decisions.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/rajv79/Stock_Market_Prediction?tab=readme-ov-file#stock-market-prediction-program" target="_blank" class="cta"
+                    aria-label="Visit Stock Prediction Live">
+                    <span>Live view</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div   vivek-image-div">
+                <img src="src/png/st_1.png" alt=" Stock  website preview image" />
+              </div>
+            </div>
+          </div>
+          <!-- --------------------- -->
+
+            
+
+
+
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- main ends here -->
+
+  <footer id="footer">
+    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
+      <article aria-label="Back to top">&#8592;BACK TO TOP</article>
+    </button>
+
+
+    <div class="footer-background">
+
+      <canvas id="snowCanvas"></canvas>
+
+      <div class="footer-blob"></div>
+    </div>
+    <div class="footer-foreground">
+      <div class="footercontainer">
+        <div class="two-words">
+          <article tabindex="0" aria-label="Learning, Living, and Leveling Up, my quote">
+            "Learning, Living, and Leveling Up."
+          </article>
+        </div>
+        <div class="social-media-container">
+          <div class="getintouch-heading">
+            <article>GetinTouch();</article>
+          </div>
+          <div class="logos">
+            <a href="https://www.instagram.com/viv_raj_07/" target="_blank" tabindex="0"
+              aria-label="My instagram"><svg viewBox="0 0 448 512" class="SocialHandle">
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+              </svg></a>
+
+            <a href="https://www.linkedin.com/in/vivek-raj07/?profileId=ACoAADdh8J0BmSPMTaMbjoBocHNSG6gDY8ZYAoE" target="_blank"
+              aria-label="My Linkdin"><svg class="SocialHandle" viewBox="0 0 448 512">
+                <path
+                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+              </svg></a>
+
+            <a href="https://github.com/rajv79" target="_blank" aria-label="My github"><svg viewBox="0 0 496 512"
+                class="SocialHandle">
+                <path
+                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+              </svg></a>
+
+            <a href="vivekvraj10@gmail.com" target="_blank" aria-label="My G mail"><svg id="GmailLogo"
+                viewBox="0 0 512 512">
+                <path
+                  d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+              </svg></a>
+          </div>
+        </div>
+
+          <!--  face changing code ------------------------------------------------------- -->
+            
+        <div class="footer-avatar-container">
+          <img src="src/png/footer-avatar-vinod.png" alt="animation-head" class="footer-avatar-img" id="footer-wala-avatar"/>
+          <div class="footer-avatar-face">
+            <div class="footer-avatar-eye footer-left-eye">
+              <div class="footer-pupil"></div>
+            </div>
+            <div class="footer-avatar-eye footer-right-eye">
+              <div class="footer-pupil"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <article>
+            Design & Built by Vivek Raj
+            &#169; 2025
+          </article>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends here -->
+
+  <script src="main.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    function openURL() {
+      var url = "src/pdf/FNU_VIVEK_RAJ_SPEe.pdf";
+
+      window.open(url, "_blank");
+    }
+  </script>
+
+  <script>
+    const cursorInner = document.getElementById("cursor-inner");
+    const cursorOuter = document.getElementById("cursor-outer");
+    const links = document.querySelectorAll("a,label,button");
+
+    document.addEventListener("mousemove", function (e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursorInner.style.left = `${posX}px`;
+      cursorInner.style.top = `${posY}px`;
+
+      // cursorOuter.style.left = `${posX}px`;
+      // cursorOuter.style.top = `${posY}px`;
+
+      cursorOuter.animate(
+        {
+          left: `${posX}px`,
+          top: `${posY}px`,
+        },
+        { duration: 500, fill: "forwards" }
+      );
+
+      links.forEach((link) => {
+        link.addEventListener("mouseenter", () => {
+          cursorInner.classList.add("hover");
+          cursorOuter.classList.add("hover");
+        });
+        link.addEventListener("mouseleave", () => {
+          cursorInner.classList.remove("hover");
+          cursorOuter.classList.remove("hover");
+        });
+      });
+    });
+  </script>
+
+
+
+
+
+  <script>
+  const canvas = document.getElementById("snowCanvas");
+  const ctx = canvas.getContext("2d");
+
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = document.getElementById("footer").offsetHeight;
+  }
+
+  resizeCanvas();
+  window.addEventListener('resize', resizeCanvas);
+
+  let flakes = [];
+
+  function snowFlake() {
+    this.x = Math.random() * canvas.width;
+    this.y = Math.random() * canvas.height;
+    this.radius = Math.random() * 4 + 1;
+    this.speed = Math.random() * 1 + 0.5;
+    this.wind = Math.random() * 0.5 - 0.25;
+  }
+
+  function createFlakes() {
+    flakes = [];
+    for (let i = 0; i < 100; i++) {
+      flakes.push(new snowFlake());
+    }
+  }
+
+  function drawFlakes() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "white";
+    ctx.beginPath();
+    flakes.forEach(f => {
+      ctx.moveTo(f.x, f.y);
+      ctx.arc(f.x, f.y, f.radius, 0, Math.PI * 2);
+    });
+    ctx.fill();
+    moveFlakes();
+  }
+
+  function moveFlakes() {
+    flakes.forEach(f => {
+      f.y += f.speed;
+      f.x += f.wind;
+
+      if (f.y > canvas.height) {
+        f.y = 0;
+        f.x = Math.random() * canvas.width;
+      }
+    });
+  }
+
+  function animateSnow() {
+    drawFlakes();
+    requestAnimationFrame(animateSnow);
+  }
+
+  createFlakes();
+  animateSnow();
+</script>
+
+
+
+<script>
+tsParticles.load("education-bg", {
+  fullScreen: { enable: false },
+  particles: {
+    number: {
+      value: 15,
+      density: { enable: true, value_area: 800 }
+    },
+    color: { value: "#ffffff" },
+    shape: { type: "circle" },
+    opacity: {
+      value: 0.08,
+      random: true,
+      anim: { enable: true, speed: 0.5, opacity_min: 0.02, sync: false }
+    },
+    size: {
+      value: 8,
+      random: true,
+      anim: { enable: true, speed: 1.5, size_min: 0.5, sync: false }
+    },
+    move: {
+      enable: true,
+      speed: 0.4,
+      direction: "none",
+      random: true,
+      out_mode: "out"
+    }
+  },
+  interactivity: { events: { onhover: { enable: false } } },
+  retina_detect: true
+});
+</script>
+
+
+
+
+<script>
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      document.body.classList.remove("no-scroll");
+    }, 3000); // Disables scroll lock after 3 seconds
+  });
+</script>
+
+
+
+
+<script>
+ const dialogues = [
+  "Hey... it's me, Vivek, your guide.....",
+  "You finally made it !!!.",
+  "Most people don’t even get this far.",
+  "But you... you kept going.",
+  "I like that.",
+  "Let me show you around.",
+  "This place? It's more than just a website.",
+  "Everything here has a story.",
+  "I’m from New York now — but I’ve come a long way.",
+  "Sometimes I still miss home.",
+  "You’ll see pieces of me scattered all over this place.",
+  "Scroll down. You’ll feel it.",
+  "I’ve worked hard for this — every detail, every decision.",
+  "Some people build pages. I built this like it matters.",
+  "So... take your time.",
+  "No need to rush.",
+  "You might find something unexpected.",
+  "Just keep scrolling.",
+  "I’ll be right here.",
+];
+
+
+  const dialogueEl = document.getElementById("video-dialogue");
+  let index = 0;
+
+  function showLine() {
+    dialogueEl.textContent = dialogues[index];
+    dialogueEl.style.opacity = 1;
+
+    // Wait for 3 seconds with text visible
+    setTimeout(() => {
+      dialogueEl.style.opacity = 0;
+
+      // Wait for 1 second before showing next line
+      setTimeout(() => {
+        index = (index + 1) % dialogues.length; // Loop back after last
+        showLine();
+      }, 1000);
+    }, 3000);
+  }
+
+  // Start as soon as DOM is ready
+  document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(showLine, 500);
+  });
+</script>
+
+
+
+
+
+
+
+
+ 
+</body>
+
+</html>
