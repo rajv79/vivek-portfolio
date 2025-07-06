@@ -750,7 +750,7 @@ noscript {
 #info-para,
 .about-info p {
     font-weight: 400;
-    font-size: 2rem
+    font-size: 2.0rem
     
 }
 
@@ -858,7 +858,15 @@ noscript {
     padding-top: 30px;
     color: var(--color-ddd-color);
     text-shadow: 1px 1px 3px rgba(67, 64, 64, 0.7);
-    line-height: 25px
+    line-height: 20px
+}
+
+@media (max-width: 600px) {
+  #info-para {
+    width: 90%;         /* stretch a bit more on small screen */
+    font-size: 17px;    /* slightly bigger font */
+    line-height: 1.9;   /* more line spacing */
+  }
 }
 
 .contact-btn-div {
@@ -1081,7 +1089,8 @@ noscript {
 }
 
 .about-info p {
-    line-height: 25px
+    line-height: 1.8;         /* increases space between lines within a paragraph */
+  margin-bottom: 16px;
 }
 
 .dp {
@@ -2306,7 +2315,7 @@ footer {
 
 #video-dialogue {
   position: absolute;
-  bottom: 12vh;
+  bottom: 8vh;
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Poppins', sans-serif;
@@ -2339,4 +2348,10 @@ footer {
 
 .no-scroll {
   overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .mobile-navbar-tabs-li a {
+    font-size: 20px; /* Slightly larger for mobile */
+  }
 }
