@@ -2344,7 +2344,7 @@ footer {
   100% { opacity: 0; }
 }
 
-/********************************************************* hornors and award ************************************/
+
 
 .no-scroll {
   overflow: hidden;
@@ -2355,3 +2355,234 @@ footer {
     font-size: 20px; /* Slightly larger for mobile */
   }
 }
+
+/********************************************************* hornors and award ************************************/
+
+.tech-stack-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 💡 3 cards per row */
+  gap: 2rem;
+  justify-items: center;
+  padding: 2rem 0;
+}
+
+.tap-hint {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 28px;
+  height: 28px;
+  opacity: 0.7;
+  animation: pulseHint 1.8s infinite;
+  pointer-events: none; /* So it doesn't interfere with clicks */
+}
+
+
+.tap-hint img {
+  width: 100%;
+  height: auto;
+  transform: rotate(-20deg);
+}
+
+
+.frontend-dev-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #cde7f7;
+  text-align: center;
+  margin-top: 1rem;
+  animation: floatTitle 5s ease-in-out infinite;
+}
+
+@media (max-width: 1024px) {
+  .tech-stack-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .tech-stack-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes tapWiggle {
+  0%, 100% {
+    transform: translateY(0px) rotate(-20deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(-20deg);
+  }
+}
+
+
+
+
+.award-card {
+  width: 200px;
+  height: 220px;
+  margin: 1rem;
+  cursor: pointer;
+  border-radius: 14px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, border 0.3s ease;
+  transform-style: preserve-3d;
+  position: relative;
+  background: linear-gradient(145deg, #1c1c1c, #222222);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+
+  animation: giggleCard 2s ease-in-out infinite;
+}
+
+/* Flip + Glow on Hover */
+.award-card:hover,
+.award-card:focus {
+  animation: none; /* Stop wobble on hover */
+  transform: translateY(-12px) scale(1.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 0 8px rgba(255, 255, 255, 0.05),
+    0 0 12px #d9ff91,
+    0 0 24px #e6ffc1;
+  z-index: 10;
+}
+
+
+
+
+
+/* Flip container */
+.award-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.award-card:hover .award-inner,
+.award-card:focus .award-inner {
+  transform: rotateY(180deg);
+}
+
+/* Card Faces */
+.award-front,
+.award-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 14px;
+  backface-visibility: hidden;
+  background: #1d1d1d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.02);
+}
+
+/* Front face content */
+.award-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* or 'cover' if you want it to crop/fill */
+  margin-bottom: 0;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+
+
+.award-front h4,
+.award-back h4 {
+  font-size: 1.2rem; /* Increased from ~1rem */
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  text-shadow: 0 0 3px rgba(0, 255, 255, 0.3);
+}
+
+/* Back face */
+.award-back {
+  transform: rotateY(180deg);
+  background: #262626;
+}
+
+.award-back p {
+  font-size: 1.5rem; /* Increased from ~0.85rem */
+  line-height: 1.5;
+  color: #ccc;
+  padding: 0 10px;
+  text-align: center;
+  text-shadow: 0 0 2px rgba(0, 255, 255, 0.2);
+}
+
+
+/* @keyframes floatTitle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+} */
+
+
+
+@keyframes giggleCard {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(1deg);
+  }
+  40% {
+    transform: rotate(-1.2deg);
+  }
+  60% {
+    transform: rotate(0.8deg);
+  }
+  80% {
+    transform: rotate(-0.5deg);
+  }
+}
+
+
+
+
+.award-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #0ff 0%, #0ff 50%, #1d1d1d 50%, #1d1d1d 100%);
+  clip-path: polygon(100% 0, 0% 0, 100% 100%);
+  z-index: 2;
+  transition: transform 0.4s ease;
+}
+
+.award-card:hover::before {
+  transform: scale(1.1) rotate(3deg);
+  filter: brightness(1.4) drop-shadow(0 0 3px #0ff);
+}
+
+@keyframes pulseHint {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+
+
+
+
+
