@@ -2315,7 +2315,7 @@ footer {
 
 #video-dialogue {
   position: absolute;
-  bottom: 8vh;
+  bottom: 5vh;
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Poppins', sans-serif;
@@ -2361,7 +2361,7 @@ footer {
 .tech-stack-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 💡 3 cards per row */
-  gap: 2rem;
+  gap: 10rem;
   justify-items: center;
   padding: 2rem 0;
 }
@@ -2417,41 +2417,39 @@ footer {
 
 
 
-
 .award-card {
-  width: 200px;
-  height: 220px;
+  width: 220px;
+  height: 260px;
   margin: 1rem;
   cursor: pointer;
-  border-radius: 14px;
-  transition: transform 0.5s ease, box-shadow 0.5s ease, border 0.3s ease;
-  transform-style: preserve-3d;
+  border-radius: 18px;
   position: relative;
-  background: linear-gradient(145deg, #1c1c1c, #222222);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-
-  animation: giggleCard 2s ease-in-out infinite;
+  overflow: hidden;
+  background: rgba(233, 113, 235, 0.05);
+  border: 1px solid rgba(214, 88, 228, 0.15);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  transform-style: preserve-3d;
+  transform: perspective(800px) rotateX(0deg) rotateY(0deg);
+  transition: all 0.5s ease;
+  box-shadow:
+    inset 2px 2px 6px rgba(242, 167, 240, 0.1),
+    inset -2px -2px 6px rgba(233, 186, 244, 0.15),
+    0 10px 25px rgba(237, 183, 224, 0.3),
+    0 2px 5px rgba(255, 255, 255, 0.05);
+  animation: floatCard 5s ease-in-out infinite;
 }
 
-/* Flip + Glow on Hover */
 .award-card:hover,
 .award-card:focus {
-  animation: none; /* Stop wobble on hover */
-  transform: translateY(-12px) scale(1.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform: perspective(800px) rotateX(4deg) rotateY(-4deg) scale(1.06);
   box-shadow:
-    0 0 8px rgba(255, 255, 255, 0.05),
-    0 0 12px #d9ff91,
-    0 0 24px #e6ffc1;
+    0 8px 24px rgba(68, 114, 230, 0.2),
+    0 12px 40px rgba(45, 191, 224, 0.5);
+  border: 1px solid rgba(94, 166, 232, 0.3);
   z-index: 10;
 }
 
-
-
-
-
-/* Flip container */
 .award-inner {
   position: relative;
   width: 100%;
@@ -2461,98 +2459,75 @@ footer {
   transform-style: preserve-3d;
 }
 
-.award-card:hover .award-inner,
-.award-card:focus .award-inner {
+.award-card:hover .award-inner {
   transform: rotateY(180deg);
 }
 
-/* Card Faces */
+/* Front and Back */
 .award-front,
 .award-back {
   position: absolute;
   width: 100%;
   height: 100%;
   padding: 1rem;
-  border-radius: 14px;
+  border-radius: 16px;
   backface-visibility: hidden;
-  background: #1d1d1d;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.02);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: inset 0 0 14px rgba(255, 255, 255, 0.05);
 }
 
-/* Front face content */
+.award-back {
+  transform: rotateY(180deg);
+  background: rgba(20, 20, 20, 0.3);
+}
+
 .award-front img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* or 'cover' if you want it to crop/fill */
-  margin-bottom: 0;
+  object-fit: contain;
   padding: 20px;
   border-radius: 14px;
+  mix-blend-mode: screen;
+  opacity: 0.95;
 }
-
-
 
 .award-front h4,
 .award-back h4 {
-  font-size: 1.2rem; /* Increased from ~1rem */
+  font-size: 1.35rem;
   font-weight: 600;
   color: #ffffff;
-  margin-bottom: 0.5rem;
+  margin-top: 8px;
   text-align: center;
-  text-shadow: 0 0 3px rgba(0, 255, 255, 0.3);
-}
-
-/* Back face */
-.award-back {
-  transform: rotateY(180deg);
-  background: #262626;
+  text-shadow: 0 0 6px rgba(0, 255, 255, 0.4);
 }
 
 .award-back p {
-  font-size: 1.5rem; /* Increased from ~0.85rem */
+  font-size: 1.4rem;
   line-height: 1.5;
-  color: #ccc;
-  padding: 0 10px;
+  color: #e8e8e8;
+  padding: 0 12px;
   text-align: center;
-  text-shadow: 0 0 2px rgba(0, 255, 255, 0.2);
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.15);
 }
 
-
-/* @keyframes floatTitle {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-6px);
-  }
-} */
-
-
-
-@keyframes giggleCard {
-  0%, 100% {
-    transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(1deg);
-  }
-  40% {
-    transform: rotate(-1.2deg);
-  }
-  60% {
-    transform: rotate(0.8deg);
-  }
-  80% {
-    transform: rotate(-0.5deg);
-  }
+/* Decorative shine overlay */
+.award-card::after {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 140%;
+  height: 140%;
+  background: radial-gradient(ellipse at center, rgba(255,255,255,0.1), transparent 70%);
+  pointer-events: none;
+  z-index: 1;
 }
 
-
-
-
+/* Accent triangle corner */
 .award-card::before {
   content: "";
   position: absolute;
@@ -2560,25 +2535,33 @@ footer {
   right: 0;
   width: 40px;
   height: 40px;
-  background: linear-gradient(135deg, #0ff 0%, #0ff 50%, #1d1d1d 50%, #1d1d1d 100%);
+  background: linear-gradient(135deg, #0ff 0%, #0ff 50%, transparent 50%);
   clip-path: polygon(100% 0, 0% 0, 100% 100%);
   z-index: 2;
   transition: transform 0.4s ease;
 }
 
 .award-card:hover::before {
-  transform: scale(1.1) rotate(3deg);
-  filter: brightness(1.4) drop-shadow(0 0 3px #0ff);
+  transform: scale(1.15) rotate(3deg);
+  filter: brightness(1.5) drop-shadow(0 0 4px rgb(207, 233, 92));
 }
 
-@keyframes pulseHint {
-  0%, 100% {
-    transform: scale(1);
-    opacity: 0.6;
+/* Floating animation */
+@keyframes floatCard {
+  0% {
+    transform: translateY(0px) rotateX(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotateX(2deg);
   }
   50% {
-    transform: scale(1.5);
-    opacity: 1;
+    transform: translateY(4px) rotateX(-1.5deg);
+  }
+  75% {
+    transform: translateY(-6px) rotateX(1deg);
+  }
+  100% {
+    transform: translateY(0px) rotateX(0deg);
   }
 }
 
@@ -2586,3 +2569,236 @@ footer {
 
 
 
+
+/*-------------------------------------------------------------- spot light section ---------------------------------------------------- --*/
+
+.spotlight-section {
+  padding: 50px 20px;
+  background: transparent;
+}
+
+/* Grid Layout - Centered Cards with Spacing */
+.spotlight-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* more spacing between cards */
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* Spline Card - Slightly Bigger */
+.spline-spotlight-card {
+  position: relative;
+  width: 380px;
+  height: 380px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 12px;
+  background: rgba(167, 235, 94, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  box-shadow:
+    inset 1px 1px 8px rgba(225, 77, 215, 0.3),
+    inset -1px -1px 8px rgba(214, 89, 228, 0.2),
+    6px 6px 16px rgba(177, 88, 206, 0.3),
+    -4px -4px 16px rgba(255, 255, 255, 0.08);
+  animation: floatCard 3s ease-in-out infinite;
+  color: rgb(143, 188, 233);
+  text-align: center;
+  z-index: 1;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.spline-spotlight-card:hover {
+  transform: scale(1.04) rotate(-1deg);
+  box-shadow:
+    0 10px 30px rgba(49, 131, 237, 0.4),
+    inset 1px 1px 8px rgba(73, 40, 219, 0.2);
+}
+
+@keyframes floatCard {
+  0% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translateY(-4px) rotate(-1deg) scale(1.02);
+  }
+  50% {
+    transform: translateY(2px) rotate(1deg) scale(1.015);
+  }
+  75% {
+    transform: translateY(-2px) rotate(-0.5deg) scale(1.01);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+}
+
+
+/* Image inside card */
+.spotlight-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  filter: none;
+  transition: transform 0.4s ease;
+}
+
+.spline-spotlight-card:hover .spotlight-image {
+  transform: scale(1.05);
+}
+
+.spline-spotlight-card h3,
+
+.spline-spotlight-card p {
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 10px;
+  margin-bottom: 6px;
+  font-size: 1.5rem !important; /* Increased from 1.2rem */
+  font-weight: 600;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.3),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.1);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  max-width: 90%;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+
+
+.spline-spotlight-card h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.spline-spotlight-card p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+/* Plus Button - Only "+" with water droplet feel */
+.spline-plus-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: monospace;
+  text-decoration: none;
+  box-shadow:
+    inset 2px 2px 6px rgba(255, 255, 255, 0.3),
+    inset -2px -2px 6px rgba(0, 0, 0, 0.2),
+    0 6px 20px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(15px);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  z-index: 3;
+  margin-top: 16px;
+  animation: pulseBorder 1s ease-in-out infinite;
+  overflow: hidden;
+  user-select: none;
+  position: relative;
+}
+
+/* Water ripple on click */
+.spline-plus-button::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background: rgba(218, 239, 135, 0.2);
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.6s ease;
+}
+.spline-plus-button:active::after {
+  transform: scale(2.5);
+  opacity: 1;
+  transition: 0s;
+}
+
+/* Optional: clean up unwanted before */
+.spline-plus-button::before {
+  content: '';
+}
+
+/* Hover animation */
+.spline-plus-button:hover {
+  transform: scale(1.15) rotate(5deg);
+}
+
+/* Pulse border animation */
+@keyframes pulseBorder {
+  0% {
+    box-shadow:
+      0 0 0 0 rgba(205, 234, 14, 0.4),
+      inset 2px 2px 6px rgba(160, 238, 15, 0.3),
+      inset -2px -2px 6px rgba(105, 220, 34, 0.2),
+      0 6px 20px rgba(0, 0, 0, 0.4);
+  }
+  70% {
+    box-shadow:
+      0 0 0 14px rgba(225, 11, 197, 0),
+      inset 2px 2px 6px rgba(255, 255, 255, 0.3),
+      inset -2px -2px 6px rgba(0, 0, 0, 0.2),
+      0 6px 20px rgba(0, 0, 0, 0.4);
+  }
+  100% {
+    box-shadow:
+      0 0 0 0 rgba(225, 11, 197, 0),
+      inset 2px 2px 6px rgba(255, 255, 255, 0.3),
+      inset -2px -2px 6px rgba(0, 0, 0, 0.2),
+      0 6px 20px rgba(0, 0, 0, 0.4);
+  }
+}
+
+
+
+/* Responsive Sizing */
+@media (max-width: 768px) {
+  .spline-spotlight-card {
+    width: 200px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .spline-spotlight-card {
+    width: 160px;
+    height: 240px;
+  }
+
+  .spline-plus-button {
+    width: 34px;
+    height: 34px;
+    font-size: 18px;
+  }
+
+  .spline-plus-button::before {
+    font-size: 18px;
+  }
+}

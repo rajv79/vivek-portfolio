@@ -75,6 +75,13 @@
       </a>
     </li>
 
+    <li class="navbar-tabs-li spotlight" data-aos="fade-down" data-aos-delay="600">
+  <a href="#spotlight" aria-label="In the Spotlight menu button">
+    &#60;/InTheSpotlight&#62;
+  </a>
+</li>
+
+
     <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
             <a href="#skills" aria-label="skills menu button">
               &#60;/Skills&#62;
@@ -138,6 +145,12 @@
       </a>
     </li>
 
+       <li class="navbar-tabs-li spotlight" data-aos="fade-down" data-aos-delay="600">
+  <a href="#spotlight" aria-label="In the Spotlight menu button">
+    &#60;/InTheSpotlight&#62;
+  </a>
+</li>
+
     <li id="education-mobile-tab" class="mobile-navbar-tabs-li education" onclick="hidemenubyli()">
       <a href="#education" tabindex="0" aria-label="Education and Experience menu button">
         &#60;/Education &amp; Experience&#62;
@@ -180,12 +193,10 @@
     
 
     <div class="video-overlay"></div>
-    
-
      <div class="video-dialogue" id="video-dialogue">
-
     “Scroll the cursor... I am always watching. 😵‍💫”
   </div>
+  
 
   
 
@@ -492,8 +503,63 @@
 
 
 
+<!-- about section ends  -->
 
-    <!-- about section ends  -->
+<!-------------------------------------------------------------- spot light section ---------------------------------------------------- -->
+
+
+<section class="spotlight-section " id="spotlight">
+
+  <div class="section-heading" data-aos="fade-up">
+         <h2 class="section-heading-article" tabindex="0" aria-label="skills heading" style="text-align: left; margin-left: 19%;">
+  &#60;/In the Spotlight&#62;
+</h2>
+
+          <p class="sectionHeadingP"></p>
+        </div>
+
+  <!-- <div class="section-heading" data-aos="fade-up">
+    <h2 class="section-heading-article">&#60;/In the Spotlight&#62;</h2>
+
+  </div> -->
+
+  <div class="spotlight-grid">
+
+    <!-- Card 1 -->
+    <div class="spline-spotlight-card" data-aos="fade-up">
+      <img src="src/png/Apple_1.jpg" alt="MITRE CTF" class="spotlight-image" />
+      
+      <p>Apple Open Source Contribution</p>
+      <a class="spline-plus-button" href="https://github.com/apple/foundationdb/pull/11879" target="_blank">+</a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="spline-spotlight-card" data-aos="fade-up" data-aos-delay="100">
+      <img src="src/png/BING_NEW_1.png" alt="AI Paper" class="spotlight-image" />
+      <p>"In the Spotlight: Leading Binghamton’s First Cybersecurity eCTF Team</p>
+        
+      <a class="spline-plus-button" href="https://www.binghamton.edu/news/story/5661/binghamton-university-team-faces-students-from-around-the-world-in-hacker-competition" target="_blank">+</a>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="spline-spotlight-card" data-aos="fade-up" data-aos-delay="200">
+      <img src="src/png/ECTF_1.png" alt="OSS" class="spotlight-image" />
+     
+      <p>Placed <strong>#26 Worldwide</strong> on final scoreboard</p>
+      <a class="spline-plus-button" href="https://ectf.ctfd.io/scoreboard" target="_blank">+</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<!-------------------------------------------------------------- spot light section end here  ---------------------------------------------------- -->
+
+
+    
 
     <!------------------------------------------------------- skills-section-container ------------------------------------- -->
     
@@ -501,6 +567,7 @@
     <section class="skills-section-container" id="skills">
       
       <div class="skills-section">
+        
         <div class="section-heading" data-aos="fade-up">
           <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
             &#60;/Skills&#62;
@@ -1386,7 +1453,7 @@ tsParticles.load("education-bg", {
   window.addEventListener("load", () => {
     setTimeout(() => {
       document.body.classList.remove("no-scroll");
-    }, 3500); // Disables scroll lock after 3 seconds
+    }, 2500); // Disables scroll lock after 3 seconds
   });
 </script>
 
@@ -1472,6 +1539,31 @@ tsParticles.load("education-bg", {
 
 
 
+<script>
+  // Open modal when "+" button is clicked
+  document.querySelectorAll('.open-modal').forEach(button => {
+    button.addEventListener('click', () => {
+      const targetId = button.getAttribute('data-target');
+      document.getElementById(targetId).style.display = 'flex';
+    });
+  });
+
+  // Close modal when ✖ button is clicked
+  document.querySelectorAll('.close-modal').forEach(closeBtn => {
+    closeBtn.addEventListener('click', () => {
+      closeBtn.closest('.modal').style.display = 'none';
+    });
+  });
+
+  // Optional: Click outside modal to close
+  window.addEventListener('click', (e) => {
+    document.querySelectorAll('.modal').forEach(modal => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  });
+</script>
 
 
 
