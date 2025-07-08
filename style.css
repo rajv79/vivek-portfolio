@@ -2630,6 +2630,11 @@ footer {
   margin-top: 30px;
 }
 
+.spotlight-grid {
+  margin-top: 70px; /* Add spacing between heading and cards */
+}
+
+
 /* Spline Card - Slightly Bigger */
 .spline-spotlight-card {
   position: relative;
