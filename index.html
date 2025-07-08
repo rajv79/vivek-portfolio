@@ -196,6 +196,7 @@
      <div class="video-dialogue" id="video-dialogue">
     “Scroll the cursor... I am always watching. 😵‍💫”
   </div>
+  <div class="video-dialogue preview" id="next-dialogue"></div>
   
 
   
@@ -295,7 +296,7 @@
 
         </article>
 
-            <p id="info-para" data-aos="fade-up" data-aos-delay="300">
+            <p id="info-para" style="font-size: 2.0rem;" data-aos="fade-up" data-aos-delay="300">
       I’m a Computer Science graduate passionate about building secure and intelligent software. My work spans software development, DevOps, and AI systems with a strong focus on performance, security, and reliability.<br /><br />
       <span style="display:block; height: 10px;"></span>
       I care about writing clean code, automating processes, and creating systems that scale with confidence.
@@ -514,6 +515,15 @@
          <h2 class="section-heading-article" tabindex="0" aria-label="skills heading" style="text-align: left; margin-left: 19%;">
   &#60;/In the Spotlight&#62;
 </h2>
+<br>
+<br>
+<br>
+
+<br>
+
+
+
+
 
           <p class="sectionHeadingP"></p>
         </div>
@@ -524,6 +534,7 @@
   </div> -->
 
   <div class="spotlight-grid">
+<br>
 
     <!-- Card 1 -->
     <div class="spline-spotlight-card" data-aos="fade-up">
@@ -1461,7 +1472,7 @@ tsParticles.load("education-bg", {
 
 
 <script>
- const dialogues = [
+const dialogues = [
   "Hey... it's me, Vivek, your guide.....",
   "You finally made it !!!.",
   "Most people don’t even get this far.",
@@ -1483,30 +1494,30 @@ tsParticles.load("education-bg", {
   "I’ll be right here.",
 ];
 
+const dialogueEl = document.getElementById("video-dialogue");
+const nextEl = document.getElementById("next-dialogue");
 
-  const dialogueEl = document.getElementById("video-dialogue");
-  let index = 0;
+let index = 0;
 
-  function showLine() {
-    dialogueEl.textContent = dialogues[index];
-    dialogueEl.style.opacity = 1;
+function showLine() {
+  // Current line
+  dialogueEl.textContent = dialogues[index];
+  dialogueEl.classList.remove("dialogue-animate");
+  void dialogueEl.offsetWidth; // Force reflow
+  dialogueEl.classList.add("dialogue-animate");
 
-    // Wait for 3 seconds with text visible
-    setTimeout(() => {
-      dialogueEl.style.opacity = 0;
+  // Preview next line
+  const nextIndex = (index + 1) % dialogues.length;
+  nextEl.textContent = dialogues[nextIndex];
 
-      // Wait for 1 second before showing next line
-      setTimeout(() => {
-        index = (index + 1) % dialogues.length; // Loop back after last
-        showLine();
-      }, 1000);
-    }, 3000);
-  }
+  index = nextIndex;
 
-  // Start as soon as DOM is ready
-  document.addEventListener("DOMContentLoaded", () => {
-    setTimeout(showLine, 500);
-  });
+  setTimeout(showLine, 4000); // Match the animation duration
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(showLine, 500);
+});
 </script>
 
 
