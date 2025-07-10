@@ -2253,6 +2253,9 @@ footer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding: 20px;       
+  box-sizing: border-box;
+  position: relative;
 }
 
 .vivek-image {
@@ -2260,13 +2263,13 @@ footer {
   max-width: 230px;
   height: auto;
   border-radius: 20px;
-  object-fit: contain; /* was: cover */
+  object-fit: contain;
   box-shadow: 0 0 20px rgba(156, 204, 235, 0.9);
-  
-  animation: pulse 3s infinite ease-in-out; 
- 
-  
+  animation: pulse 3s infinite ease-in-out;
+  transform: translate(-10px, -10px); 
 }
+
+
 
 @keyframes pulse {
   0% {
@@ -2939,3 +2942,29 @@ footer {
 
 
 
+.footer-counter {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  text-align: center;
+  font-size: 12px;
+  font-family: monospace;
+  color: #b8d7ff;
+  opacity: 0.7;
+  z-index: 999;
+}
+
+.footer-counter:hover {
+  opacity: 1;
+}
+
+.visit-label {
+  margin-bottom: 2px;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.footer-counter img {
+  width: 85px; 
+  height: auto;
+}
